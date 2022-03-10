@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studio</title>
+   
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script src="https://unpkg.com/monaco-editor@0.8.3/min/vs/loader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<link rel="stylesheet" href="mdc.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+ <header class="header">
+<div class="header-1">
+     <div class="left">
+     <a href="">metricbox</a>
+   </div>
+   <div class="center">
+
+     
+    
+
+     <button class="mdc-button mdc-button--unelevated" id="run-button">
+  <i class="fas fa-play" ></i>
+  Run
+</button>
+     
+   </div>
+   <div class="right">
+   
+
+
+
+     
+  <button class="mdc-button mdc-button--unelevated" >
+   <i class="fas fa-user-plus"></i>Invite
+</button>
+       <button class="mdc-button mdc-button--unelevated" >
+  <i class="fab fa-git-alt" id="clone-icon"></i>Clone
+</button>
+     
+   </div>
+</div>
+
+   				
+ </header>
+  <section class="layout">
+   <div class="navbar">
+     <i class="far fa-file" id="files-icon-hover"></i>
+     <i class="fas fa-align-left" id="beautify-icon-hover"></i>
+     <i class="fas fa-search" id="search-icon-hover"></i>
+     <i class="fas fa-download" id="download-icon-hover"></i>
+     <i class="fas fa-life-ring" id="docs-icon-hover"></i>
+   </div>
+
+
+
+
+
+
+
+
+
+   
+   <div class="body" id="container">
+
+   </div>
+
+
+	<div class="svelte5" style="flex:1;">
+
+<div class="container">
+		<header>
+				<div id="material-tabs">
+						<a id="tab1-tab" href="#tab1" class="active">Console log</a>
+						<a id="tab2-tab" href="#tab2">Config</a>
+						<a id="tab3-tab" href="#tab3">Version control</a>
+						
+						<span class="yellow-bar"></span>
+				</div>
+		</header>
+<div class="file-viewer"><h3>Files</h3></div>
+		<div class="tab-content">
+				<div id="tab1">
+						<p>There are three basic ideas invoved in creating these tabs:</p>
+						<ol>
+								<li>Use anchor tags as tabs.</li>
+								<li>Use a span class for the tab highlight.</li>
+							<li>In your CSS, adjust the <strong>position</strong> of the highlight, as well as it's <strong>width</strong>, by detecting the anchor tag with an 'active' class. Then adjust its left property and width property. Add a transition in your CSS, <em>et voil&agrave;</em>.</li>
+						</ol>
+				</div>
+				<div id="tab2">
+						<p>Second tab content.</p>
+				</div>
+				<div id="tab3">
+						<p>Third tab content.</p>
+				</div>
+						
+		</div>
+
+					</div>
+
+  </section>
+
+<script src="tippy.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
